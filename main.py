@@ -22,17 +22,16 @@ while x == None:
     elif user_response == "Lower":
         higher_limit=guessed-1
         if higher_limit < lower_limit:
-            print("are you sure about that??? The will have to start over because you gave WRONGE DIRECTION!")
+            print("are you sure about that??? You will have to start over because you gave WRONGE DIRECTION!")
             break
-        guessed=random.randint(lower_limit,higher_limit) if guessed > 0 else 0
+        guessed=random.randint(lower_limit,higher_limit) 
         print(f"Is it {guessed}")        
     elif user_response == "Higher":
         lower_limit=guessed+1
         if lower_limit > higher_limit:
-            print("are you sure about that??? The will have to start over because you gave WRONGE DIRECTION!")
+            print("are you sure about that??? You will have to start over because you gave WRONGE DIRECTION!")
             break
-        guessed=random.randint(lower_limit,higher_limit) if guessed < 10 else 10
-        print(f"Is it {guessed}")
+        guessed=random.randint(lower_limit,higher_limit) 
     else:
         print("please answer with one of the options")     
 
